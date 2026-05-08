@@ -1,0 +1,6 @@
+name: ignore_user
+desc: 极致简单的用户黑名单插件，让机器人彻底无视特定用户。
+help: 在管理面板的“配置”中添加用户 ID 即可生效。
+version: v1.0.0
+author: enixi
+repo: https://github.com/enixi/astrbot_plugin_ignore_user

@@ -1,0 +1,22 @@
+{
+    "enable_blacklist": {
+        "type": "bool",
+        "description": "🔌 插件总开关",
+        "default": true
+    },
+    "blacklist_users": {
+        "type": "list",
+        "description": "🚫 黑名单用户 ID 列表",
+        "hint": "输入你想要屏蔽的用户 ID（如 QQ 号）。",
+        "default": [],
+        "items": {
+            "type": "string"
+        }
+    },
+    "enable_log": {
+        "type": "bool",
+        "description": "📝 打印拦截日志",
+        "hint": "开启后，当拦截到消息时会在控制台显示日志。",
+        "default": true
+    }
+}

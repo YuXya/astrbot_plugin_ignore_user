@@ -1,7 +1,7 @@
 {
     "enable_blacklist": {
         "type": "bool",
-        "description": "🔌 插件总开关",
+        "description": "🔌 黑名单总开关",
         "default": true
     },
     "blacklist_users": {
@@ -13,10 +13,27 @@
             "type": "string"
         }
     },
+    "enable_text_filter": {
+        "type": "bool",
+        "description": "✂️ 文本过滤总开关",
+        "default": true
+    },
+    "filter_texts": {
+        "type": "list",
+        "description": "🗑️ 需要删除的特定文字列表",
+        "hint": "包含在此列表中的文字将在用户发送的消息中被自动删除（如：<正文>）。",
+        "default": [
+            "<正文>",
+            "</正文>"
+        ],
+        "items": {
+            "type": "string"
+        }
+    },
     "enable_log": {
         "type": "bool",
-        "description": "📝 打印拦截日志",
-        "hint": "开启后，当拦截到消息时会在控制台显示日志。",
+        "description": "📝 打印操作日志",
+        "hint": "开启后，当拦截到黑名单或删除特定文字时，会在控制台显示日志。",
         "default": true
     }
 }

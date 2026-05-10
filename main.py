@@ -1,9 +1,10 @@
 from typing import Any
 from astrbot.api import AstrBotConfig, logger
 from astrbot.api.event import AstrMessageEvent, filter
-from astrbot.api.star import Context, Star
+from astrbot.api.star import Context, Star, register
 from astrbot.api.message_components import Plain
 
+@register("ignore_user", "enixi", "用户黑名单与特定文字过滤插件", "1.1.0", "https://github.com/enixi/astrbot_plugin_ignore_user")
 class IgnoreUserPlugin(Star):
     def __init__(self, context: Context, config: AstrBotConfig) -> None:
         super().__init__(context)
